@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    <form>
+    <fieldset style="width:430px;">
+        <h2>Pizza Order Form</h2>
+
+        <table cellpadding="8">
+
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="fname"></td>
+            </tr>
+
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="lname"></td>
+            </tr>
+
+            <tr>
+                <td>Email Address:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td>Contact Number:</td>
+                <td><input type="text" name="contact"></td>
+            </tr>
+
+            <tr>
+                <td>Preferred Delivery Date:</td>
+                <td><input type="text" placeholder="mm/dd/yyyy"></td>
+            </tr>
+
+            <tr>
+                <td>Size:</td>
+                <td>
+                    <input type="radio" name="size"> Small
+                    <input type="radio" name="size"> Medium
+                    <input type="radio" name="size"> Large
+                </td>
+            </tr>
+
+            <tr>
+                <td>Flavor:</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox"> Hawaiian (Php 150.00)
+                </td>
+                <td>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox"> Pepperoni (Php 140.00)
+                </td>
+                <td>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox"> Vegetable (Php 130.00)
+                </td>
+                <td>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Credit Card Number:</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>PIN:</td>
+                <td><input type="password"></td>
+            </tr>
+
+            <tr>
+                <td>Additional Note:</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <textarea rows="5" cols="45"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit Order">
+                </td>
+            </tr>
+
+        </table>
+    </fieldset>
+    </form>
+
+</body>
+</html>

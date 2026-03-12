@@ -1,0 +1,26 @@
+.a{
+    margin: 0;
+    padding: 0;
+    box-sizing:200px;
+}
+
+.a{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+#mydiv,
+#mydiv2
+#mydiv3{
+    background-color: gray;
+    border: 1px solid rgb(16, 15, 15);
+}
+
+#mydiv2{
+    display: none;
+}
+
+#mydiv3{
+    margin: 5px;
+}

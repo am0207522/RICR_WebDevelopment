@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Enquiry Form</title>
+
+<style>
+
+footer{
+    text-align: center;
+    background-color:grey;
+}
+
+body{
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+    background:#f8f9f8;
+}
+
+.container{
+    width:600px;
+    margin:60px auto;
+    background:rgb(168, 189, 189);
+    padding:40px;
+    border-radius:8px;
+}
+
+.container h2{
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.container p{
+    text-align:center;
+    font-size:12px;
+    margin-bottom:25px;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+    margin-bottom:15px;
+}
+
+/* column css style */
+.col{
+    flex:1;
+    padding:10px;
+
+}
+
+label{
+    font-size:13px;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid black;
+    border-radius:4px;
+}
+
+/* checkbox css style  */
+.course-list input{
+    width:auto;
+    margin-right:5px;
+}
+
+/* submit button */
+button{
+    display:block;
+    margin:25px auto 0;
+    padding:10px 30px;
+    border:none;
+    background:#4caf50;
+    color:white;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Enquiry Form</h2>
+
+<p>Have questions or need assistance? Fill out the form below to connect with our team and explore your opportunities.</p>
+
+<form>
+
+<div class="row">
+
+<div class="col">
+<label>Person Name*</label>
+<input type="text" placeholder="Person Name">
+</div>
+
+<div class="col">
+<label>Contact Number*</label>
+<input type="tel" maxlength="10" placeholder="Contact Number">
+</div>
+
+</div> 
+
+
+<div class="row">
+
+<div class="col">
+<label>Email*</label>
+<input type="email" placeholder="Email">
+</div>
+
+<div class="col">
+<label>Qualification*</label>
+<input type="text" placeholder="Qualification">
+</div>
+
+</div>
+
+
+<label>College/School Name*</label>
+<input type="text" placeholder="College/School Name">
+
+
+<div class="row">
+
+<div class="col">
+<label>Year*</label>
+<select>
+<option>Year</option>
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+</select>
+</div>
+
+<div class="col">
+<label>Branch*</label>
+<input type="text" placeholder="Branch">
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col">
+
+<label>Interested in Which Course*</label>
+
+<div class="course-list">
+
+<br>
+
+<input type="checkbox"> Full Stack Web Development - Placement Oriented<br>
+
+<input type="checkbox"> Data Science with Python - Placement Oriented<br>
+
+<input type="checkbox"> Data Analytics with Python - Placement Oriented<br>
+
+<input type="checkbox"> Business Analyst<br>
+
+<input type="checkbox"> Java Programming<br>
+
+<input type="checkbox"> Python Programming<br>
+
+<input type="checkbox"> C/C++ Programming<br>
+
+<input type="checkbox"> Other
+
+</div>
+
+</div>
+
+
+<div class="col">
+
+<label>Source of Information</label>
+
+<p style="font-size:11px;color:#555;">
+(Only choose 'Received call from institute' if you actually got a call from us)
+</p>
+<br>
+<select>
+<option>Source of Information</option>
+<option>Google</option>
+<option>Instagram</option>
+</select>
+
+<br><br>
+
+<label>Name of Executive*</label>
+
+<select>
+<option>Name of Executive</option>
+<option>Executive 1</option>
+</select>
+
+</div>
+
+</div>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+<hr>
+
+<footer>
+
+<h4>Student Profile</h4>
+
+<img src="myImage.jpg" alt="Profile Image" width="160">
+
+<p><b>Name: Aditya Mishra</b></p>
+<p><b>Phone:</b> <a href="tel:+919569961209">9569961209</a></p>
+
+<a href="mailto:am0207522@email.com">Email</a> |
+<a href="https://github.com/am0207522/">GitHub</a> |
+<a href="https://www.linkedin.com/in/aditya-mishra-262663369/">LinkedIn</a> |
+<a href="https://wa.me/919569961209">WhatsApp</a> 
+
+
+</footer>
+
+</body>
+</html>

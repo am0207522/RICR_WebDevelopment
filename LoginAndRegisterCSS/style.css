@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background-color: skyblue;
+    display:flex;
+    justify-content: center;
+    gap: 100px;
+    height: 100vh;
+    /* viewport ki height vh */
+    align-items: center;
+}
+
+.card {
+    background-color: aliceblue;
+    max-height: fit-content;
+    padding: 20x;
+    border-radius: 10px;
+    display: grid;
+    gap: 20px;
+    width: 300px;
+}
+
+.form-filed {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.form-filed input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.terms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitButton button {
+    background-color: skyblue;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.refrenceLink {
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+#div{
+    border: 10px solid black;
+    width: 10px;
+    height: 20px;
+    overflow: hidden;
+    text-wrap-mode: nowrap;
+
+}
+
+#div1:hover {
+    width: 200px;
+    transition: width 3s linear;
+}
+
+#card {
+    margin: auto;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #000;
+}
+
+#card:hover{
+    transform: scale(3.0);
+    transition: transform 15s linear;
+}
+

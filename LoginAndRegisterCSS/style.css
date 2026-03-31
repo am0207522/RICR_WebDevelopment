@@ -1,56 +1,81 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #main {
-    background-color: skyblue;
-    display:flex;
-    justify-content: center;
-    gap: 100px;
-    height: 100vh;
-    /* viewport ki height vh */
-    align-items: center;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  height: 70vh;
+  padding-bottom: 30vh;
+  align-items: end;
 }
 
 .card {
-    background-color: aliceblue;
-    max-height: fit-content;
-    padding: 20x;
-    border-radius: 10px;
-    display: grid;
-    gap: 20px;
-    width: 300px;
+  background-color: aliceblue;
+  max-height: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  gap: 20px;
+  width: 250px;
 }
 
-.form-filed {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    border-bottom: 1px solid grey;
+.form-field {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
 }
 
-.form-filed input {
-    border: none;
-    background-color: transparent;
-    outline: none;
-    width: 100%;
-    padding-bottom: 5px;
+.form-field input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  padding: 5px;
 }
 
 .terms {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .submitButton button {
-    background-color: skyblue;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+  border: 1px solid skyblue;
+  background-color: skyblue;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  color: aliceblue;
 }
 
-.refrenceLink {
-    text-align: center;
+.referenceLink {
+  text-align: center;
+}
+
+.submitButton button:hover {
+  background-color: aliceblue;
+  color: skyblue;
+}
+
+.submitButton button:active {
+  background-color: aliceblue;
+  color: skyblue;
+  border: 2px solid skyblue;
+  font-weight: bolder;
+}
+
+.form-field input:focus {
+  border: 1px solid skyblue;
+  border-radius: 5px;
+}
+
+
+a{
+    text-decoration: none;
+    color: skyblue;
 }

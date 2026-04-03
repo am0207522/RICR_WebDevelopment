@@ -1,0 +1,46 @@
+:root{
+    --main-color:rgb(228, 7,224);
+    --sub-color:skyblue;
+    --text-color:green;
+}
+
+  h1::first-letter {
+    font-size: 40px;
+    color: red;
+  }
+
+
+  h3{
+    color:var(--sub-color)
+       /* color:skyblue */
+  }
+
+  p{
+    color:var(--text-color)
+      /* color:green */
+  }
+
+  th::first-letter {
+    font-size: 20px;
+    color: red;
+  }
+
+  td{
+    color:var(--text-color);
+  }
+
+  button{
+    color:var(--main-color);
+    border:1.3px solid black;
+    
+  }
+  #b2{
+    color:var(--sub-color);
+  }
+
+  table{
+    border-collapse: collapse;
+  }
+  th,td{
+    border: 2px solid green;
+  }

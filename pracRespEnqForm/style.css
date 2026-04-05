@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif
+}
+
+header {
+    height: 100px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 100px;
+    margin: 0 30px;
+    /* position: sticky;
+    top: 0;
+    z-index: 99; */
+
+    
+
+    .head {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+    }
+
+    img {
+        width: 150px;
+    }
+
+    .navLinks {
+        color: black;
+        gap: 50px;
+        display: flex;
+    }
+
+    .contact {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        button {
+            padding: 10px;
+            color: white;
+            font-weight: 600;
+            border-radius: 8px;
+            background-color: #076fb5;
+            /* box-shadow: 2px 3px 4px 40px #5cbeff; */
+        }
+    }
+}
+
+footer{
+    background-color: #125785;
+    
+        padding:0 10%;  
+    
+   
+}
+
+.footer {
+    height: 70vh;
+    background-color: #125785;
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+
+
+    img {
+        width: 150px;
+    }
+
+    p{
+        line-height: 25px;
+    }
+}
+
+#demoForm {
+    margin: 20px 20%;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: rgba(101, 149, 170, 0.5);
+
+}
+.item {
+    display: flex;
+    justify-content: baseline;
+    text-align: left;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+    p {
+        text-align: left;
+    }
+
+    div {
+        width: 50%;
+        display: grid;
+    }
+
+    #email {
+        width: 70%;
+
+        input {
+            width: 90%;
+        }
+    }
+
+    #qualification {
+        width: 30%;
+
+        input {
+            width: 85%
+        }
+    }
+}
+
+input {
+    padding: 18px;
+    border-radius: 8px;
+    width: 50%px;
+    border: none;
+}
+
+#dropDown {
+    padding: 18px;
+    border-radius: 5px;
+    border: none;
+}
+
+#btn {
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    #button {
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        width: 130px;
+        padding: 20px 40px;
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 36px;
+        margin-left: 500px;
+        font-size: larger;
+
+    }
+}
+
+#controlWidth {
+    width: 100%;
+
+    #college {
+        width: 95%;
+    }
+
+}
+
+#year {
+    width: 75%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+}
+
+#execu {
+    width: 75%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+
+
+.item-course {
+    display: grid;
+    gap: 8px;
+    div{
+        display: flex;
+        width: 380px;
+        gap: 7px;
+    }
+}
+
+.item1 {
+    padding-top: 50px;
+}
+
+.years {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.info
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .info1{
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+}
+#copyR{
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+#copyRi{
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    align-items: center;
+    justify-content: space-around;
+}
+.fonts{
+    display: flex;
+    gap: 30px;
+}
+#logo{
+    width: 140px;
+    height: 48px;
+    
+}
+@media screen and (max-width: 1200px) {
+    #demoForm {
+        margin: 20px 10%;
+    }
+
+    header {
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .navLinks {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #demoForm {
+        margin: 20px 5%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 30px;
+        height: auto;
+        padding: 30px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item div {
+        width: 100%;
+    }
+
+    #btn {
+        justify-content: center;
+    }
+
+    #btn #button {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #demoForm {
+        width: 95%;
+        padding: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #year {
+        width: 100%;
+    }
+
+    .item-course div {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .fonts {
+        justify-content: center;
+    }
+}

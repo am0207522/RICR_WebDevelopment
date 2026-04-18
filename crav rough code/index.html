@@ -1,0 +1,87 @@
+<!-- ─── HERO ─── -->
+<section class="hero-section" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&q=80');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content text-center text-white px-3 w-100">
+    <h1 class="display-4 fw-800 mb-3">Your Favorite Food,<br>Delivered <span style="">Fast</span></h1>
+    <p class="lead mb-4 opacity-90">Order from thousands of restaurants and get it delivered to your doorstep</p>
+    <div class="d-flex justify-content-center gap-3 mb-4 flex-wrap">
+      <a href="register.html" class="btn px-4 py-2 fw-600" style="background:var(--color-primary);color:#fff;border-radius:8px;">Sign Up</a>
+      <a href="order-now.html" class="btn px-4 py-2 fw-600" style="background:#fff;color:var(--color-base-content);border-radius:8px;">Order Now</a>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="search-bar shadow">
+        <i class="bi bi-search"></i>
+        <input type="text" class="bi bi-search px-2 py-1 w-full" placeholder="Search restaurants or dishes..." />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- LEFT — Form -->
+  <div class="auth-form-panel">
+    <div class="register-card-inner">
+
+      <!-- Logo -->
+      <div class="mb-4">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Cravings" height="44"/>
+        </a>
+      </div>
+
+      <h3>Create Account</h3>
+      <p class="subtext">Join us as a Customer, Restaurant, or Rider</p>
+
+      <!-- Radio -->
+      <label style="font-weight:600; font-size:14px; margin-bottom:8px; display:block;">Register as:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="type" checked> Customer</label>
+        <label><input type="radio" name="type"> Restaurant</label>
+        <label><input type="radio" name="type"> Rider</label>
+      </div>
+
+      <!-- Inputs -->
+      <input type="text" placeholder="Enter your full name">
+      <input type="email" placeholder="Enter your email">
+      <input type="tel" placeholder="Enter your phone number">
+      <input type="password" placeholder="Enter your password">
+      <input type="password" placeholder="Confirm your password">
+
+      <!-- Terms -->
+      <div class="terms">
+        <input type="checkbox" id="terms"/>
+        <label for="terms">I agree to the <a href="terms-of-service.html">terms and conditions</a>.</label>
+      </div>
+
+      <button class="register-btn">Register</button>
+
+      <p class="login-link">
+        Already registered? <a href="login.html">Login here</a>
+      </p>
+
+    </div>
+  </div>
+
+
+  /* BUTTONS */
+.hero-btns {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+  pointer-events: all;
+}
+
+.btn-signup {
+  background: #c2410c;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.btn-signup:hover {
+  background: #9a3208;
+  color: white;
+}

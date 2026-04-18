@@ -93,7 +93,7 @@ footer{
     text-align: center;
     gap: 10px;
     border-radius: 20px;
-    background-color: rgba(101, 149, 170, 0.5);
+    background-color: #cfe2ff;
 
 }
 .item {
@@ -160,10 +160,10 @@ input {
         background-color: black;
         color: white;
         border-radius: 36px;
-        margin-left: 500px;
+        margin-left: 400px;
         font-size: larger;
 
-    }
+    } 
 }
 
 #controlWidth {
@@ -343,4 +343,29 @@ span{
     .fonts {
         justify-content: center;
     }
+}
+
+.login-btn {
+    background-color: #125785;
+    color: #ffffff;
+    padding: .8rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-family: initial,sans-serif;
+    line-height: 1;
+
+    /* 👇 EXACT SHADOW (offset blue layer) */
+    box-shadow: 5px 5px 0 #79b6de;
+    color: #fff !important;
+
+    transition: .1s linear;
+}
+
+/* hover same hi rahe (website me almost no change) */
+.login-btn:hover {
+    color: #ffffff;
 }

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feane – Fast Food Restaurant</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <!-- style link for css pages -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="site-nav navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Feane</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars text-white"></i>
+      </button>
+
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" href="/feane_proj/index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/feane_proj/pages/menu.html">MENU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/feane_proj/pages/about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/feane_proj/pages/book-table.html">BOOK TABLE</a>
+        </li>
+      </ul>
+
+      <div class="nav-icons">
+        <a href="#"><i class="fa fa-user"></i></a>
+        <a href="#"><i class="bi bi-cart-fill"></i></a>
+        <a href="#"><i class="fa fa-search"></i></a>
+        <a href="pages/menu.html" class="nav-link btn-order-online ms-2">Order Online</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+
+    <!--hero bg image section -->
+    <div class="hero-image-wrap">
+      <img src="Images/Feane_Indexhero-bg.jpg" alt="image" />
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+
+          <!-- yaha se carousal START -->
+
+          <div id="heroTextSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+            <div class="carousel-inner">
+
+              <!-- SLIDE 1 -->
+              <div class="carousel-item active">
+                <h1 class="hero-title">Fast Food Restaurant</h1>
+                <p class="hero-desc">
+                  Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam
+                  quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil
+                  ducimus libero ipsam.
+                </p>
+                <a href="#" class="btn-gold">Order Now</a>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div class="carousel-item">
+                <h1 class="hero-title">Fast Food Restaurant</h1>
+                <p class="hero-desc">
+                  Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam
+                  quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil
+                  ducimus libero ipsam.
+                </p>
+                <a href="#" class="btn-gold">Order Now</a>
+              </div>
+
+              <!-- SLIDE 3 -->
+              <div class="carousel-item">
+                <h1 class="hero-title">Fast Food Restaurant</h1>
+                <p class="hero-desc">
+                  Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam
+                  quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil
+                  ducimus libero ipsam.
+                </p>
+                <a href="/pages/menu.html" class="btn-gold">Order Now</a>
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button data-bs-target="#heroTextSlider" data-bs-slide-to="0" class="active"></button>
+              <button data-bs-target="#heroTextSlider" data-bs-slide-to="1"></button>
+              <button data-bs-target="#heroTextSlider" data-bs-slide-to="2"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+     OFFER BANNERS
+═══════════════════════════════════════════════ -->
+  <section class="offer-bg section-pad-sm">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-5">
+          <div class="offer-card">
+            <div class="offer-thumb">
+              <img src="/feane_proj/Images/burger-offer1.png" alt="Burger offer"
+                onerror="this.src='https://placehold.co/120x120/2a3347/FEA116?text=🍔'" />
+            </div>
+            <div>
+              <div class="offer-label">Tasty Thursdays</div>
+              <div class="offer-pct">20% <small>Off</small></div>
+              <a href="pages/menu.html" class="btn-gold mt-3">
+                Order Now &nbsp;<i class="fa fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="offer-card">
+            <div class="offer-thumb">
+              <img src="/feane_proj/Images/burger-offer2.png" alt="Pizza offer"
+                onerror="this.src='https://placehold.co/120x120/2a3347/FEA116?text=🍕'" />
+            </div>
+            <div>
+              <div class="offer-label">Pizza Days</div>
+              <div class="offer-pct">15% <small>Off</small></div>
+              <a href="pages/menu.html" class="btn-gold mt-3">
+                Order Now &nbsp;<i class="fa fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+     <!-- index.html page OUR MENU section (CSS-only filter) -->
+
+
+
+  <section class="menu-section section-pad">
+    <div class="container">
+      <h2 class="sec-title">Our Menu</h2>
+
+      <!-- Hidden radio inputs that power the CSS filter -->
+      <input type="radio" class="filter-radio" id="filter-all" name="mfilter" checked />
+      <input type="radio" class="filter-radio" id="filter-burger" name="mfilter" />
+      <input type="radio" class="filter-radio" id="filter-pizza" name="mfilter" />
+      <input type="radio" class="filter-radio" id="filter-pasta" name="mfilter" />
+      <input type="radio" class="filter-radio" id="filter-fries" name="mfilter" />
+
+      <!-- Filter pill labels -->
+      <div class="filter-group">
+        <label class="filter-pill active" for="filter-all">All</label>
+        <label class="filter-pill" for="filter-burger">Burger</label>
+        <label class="filter-pill" for="filter-pizza">Pizza</label>
+        <label class="filter-pill" for="filter-pasta">Pasta</label>
+        <label class="filter-pill" for="filter-fries">Fries</label>
+      </div>
+
+      <!-- Menu grid -->
+      <div class="row menu-grid">
+
+        <!-- 1 -->
+        <div class="col-lg-4 col-md-6" data-cat="pizza">
+          <div class="menu-card">
+            <div class="menu-card-top">
+              <img src="../feane_proj/Images/Pizza_Menu.png" alt="Delicious Pizza"
+                onerror="this.src='https://placehold.co/200x170/f8f8f8/888?text=Pizza'" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">Delicious Pizza</div>
+              <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                voluptatem repellendus sed eaque</p>
+              <div class="menu-card-foot">
+                <span class="menu-price">$20</span>
+                <button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-lg-4 col-md-6" data-cat="burger">
+          <div class="menu-card">
+            <div class="menu-card-top">
+              <img src="../feane_proj/Images/Burger_item.png" alt="Delicious Burger"
+                onerror="this.src='https://placehold.co/200x170/f8f8f8/888?text=Burger'" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">Delicious Burger</div>
+              <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                voluptatem repellendus sed eaque</p>
+              <div class="menu-card-foot">
+                <span class="menu-price">$15</span>
+                <button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-lg-4 col-md-6" data-cat="pizza">
+          <div class="menu-card">
+            <div class="menu-card-top">
+              <img src="../feane_proj/Images/Pizza_Item_2.png" alt="Delicious Pizza"
+                onerror="this.src='https://placehold.co/200x170/f8f8f8/888?text=Pizza'" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">Delicious Pizza</div>
+              <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                voluptatem repellendus sed eaque</p>
+              <div class="menu-card-foot">
+                <span class="menu-price">$17</span>
+                <button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-lg-4 col-md-6" data-cat="pasta">
+          <div class="menu-card">
+            <div class="menu-card-top">
+              <img src="../feane_proj/Images/Pasta_Item_1.png" alt="Delicious Pasta"
+                onerror="this.src='https://placehold.co/200x170/f8f8f8/888?text=Pasta'" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">Delicious Pasta</div>
+              <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                voluptatem repellendus sed eaque</p>
+              <div class="menu-card-foot">
+                <span class="menu-price">$18</span>
+                <button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-lg-4 col-md-6" data-cat="fries">
+          <div class="menu-card">
+            <div class="menu-card-top">
+              <img src="../feane_proj/Images/FrenchFries_Item_1.png" alt="French Fries"
+                onerror="this.src='https://placehold.co/200x170/f8f8f8/888?text=Fries'" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">French Fries</div>
+              <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                voluptatem repellendus sed eaque</p>
+              <div class="menu-card-foot">
+                <span class="menu-price">$10</span>
+                <button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-lg-4 col-md-6" data-cat="pizza">
+          <div class="menu-card">
+            <div class="menu-card-top">
+              <img src="../feane_proj/Images/Pizza_Item_3.png" alt="Delicious Pizza"
+                onerror="this.src='https://placehold.co/200x170/f8f8f8/888?text=Pizza'" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">Delicious Pizza</div>
+              <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                voluptatem repellendus sed eaque</p>
+              <div class="menu-card-foot">
+                <span class="menu-price">$15</span>
+                <button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="col-lg-4 col-md-6" data-cat="burger">
+          <div class="menu-card">
+            <div class="menu-card-top">
+              <img src="../feane_proj/Images/Burger_Item_2.png" alt="Tasty Burger"
+                onerror="this.src='https://placehold.co/200x170/f8f8f8/888?text=Burger'" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">Tasty Burger</div>
+              <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                voluptatem repellendus sed eaque</p>
+              <div class="menu-card-foot">
+                <span class="menu-price">$12</span>
+                <button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-lg-4 col-md-6" data-cat="burger">
+          <div class="menu-card">
+            <div class="menu-card-top">
+              <img src="../feane_proj/Images/Burger_Item_3.png" alt="Tasty Burger"
+                onerror="this.src='https://placehold.co/200x170/f8f8f8/888?text=Burger'" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">Tasty Burger</div>
+              <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                voluptatem repellendus sed eaque</p>
+              <div class="menu-card-foot">
+                <span class="menu-price">$14</span>
+                <button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="col-lg-4 col-md-6" data-cat="pasta">
+          <div class="menu-card">
+            <div class="menu-card-top">
+              <img src="../feane_proj/Images/Pasta_Item_2.png" alt="Delicious Pasta"
+                onerror="this.src='https://placehold.co/200x170/f8f8f8/888?text=Pasta'" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-name">Delicious Pasta</div>
+              <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                voluptatem repellendus sed eaque</p>
+              <div class="menu-card-foot">
+                <span class="menu-price">$10</span>
+                <button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.row.menu-grid -->
+
+      <!-- View More -->
+      <div class="text-center mt-4">
+        <a href="pages/menu.html" class="btn-gold">View More</a>
+      </div>
+
+    </div>
+  </section>
+
+
+<!-- ABOUT STORY -->
+<section class="about-section section-pad">
+  <div class="container">
+    <div class="row align-items-center g-5" style="padding-top: 40px;">
+
+      <div class="col-lg-6 text-center">
+        <img src="/feane_proj/Images/aboutFeanePro-img.png" alt="About Feane Burger" class="about-img" />
+      </div>
+
+      <div class="col-lg-6">
+        <h2 class="sec-title white left">We Are Feane</h2>
+        <p class="about-text">
+          There are many variations of passages of Lorem Ipsum available, but the
+          majority have suffered alteration in some form, by injected humour, or
+          randomised words which don't look even slightly believable. If you are
+          going to use a passage of Lorem Ipsum, you need to be sure there isn't
+          anything embarrassing hidden in the middle of text. All
+        </p>
+        <a href="#" class="btn-gold" style="text-transform: none;">Read More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- ═══════════════════════════════════════════════
+     BOOK A TABLE
+═══════════════════════════════════════════════ -->
+  <section class="book-section section-pad">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Form -->
+        <div class="col-lg-6">
+          <h2 class="sec-title left">Book A Table</h2>
+
+          <form action="#" method="post">
+            <div class="book-form-group">
+              <input type="text" class="book-input" placeholder="Your Name" required />
+            </div>
+            <div class="book-form-group">
+              <input type="tel" class="book-input" placeholder="Phone Number" required />
+            </div>
+            <div class="book-form-group">
+              <input type="email" class="book-input" placeholder="Your Email" required />
+            </div>
+            <div class="book-form-group">
+              <select class="book-input">
+                <option value="" disabled selected>How many persons?</option>
+                <option>1 Person</option>
+                <option>2 Persons</option>
+                <option>3 Persons</option>
+                <option>4 Persons</option>
+                <option>5+ Persons</option>
+              </select>
+            </div>
+            <div class="book-form-group">
+              <input type="date" class="book-input" placeholder="dd/mm/yyyy" />
+            </div>
+            <button type="submit" class="btn-gold text-uppercase mt-2">Book Now</button>
+          </form>
+        </div>
+
+        <!-- Map -->
+        <div class="col-lg-6 d-flex">
+          <iframe class="map-frame" src="https://maps.google.com/maps?q=restaurant&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen loading="lazy" title="Our Location">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════════ -->
+  <section class="testimonials-section section-pad">
+    <div class="container">
+      <h2 class="sec-title">What Says Our Customers</h2>
+
+      <!-- CSS-only carousel -->
+      <input type="radio" class="carousel-radio" id="t1" name="testimonial" checked />
+      <input type="radio" class="carousel-radio" id="t2" name="testimonial" />
+
+      <div class="t-slides">
+
+        <!-- Slide 1 -->
+        <div class="t-slide" id="slide-t1">
+          <div class="row">
+            <div class="col-md-6 mb-5">
+              <div class="testimonial-card">
+                <p class="testimonial-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <div class="testimonial-name">Mike Hamell</div>
+                <div class="testimonial-role">magna aliqua</div>
+                <div class="testimonial-avatar-wrap">
+                  <img src="images/testimonials/client-1.jpg" alt="Mike Hamell" class="testimonial-avatar"
+                    onerror="this.src='https://placehold.co/82x82/FEA116/fff?text=M'" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-5">
+              <div class="testimonial-card">
+                <p class="testimonial-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <div class="testimonial-name">Moana Michell</div>
+                <div class="testimonial-role">magna aliqua</div>
+                <div class="testimonial-avatar-wrap">
+                  <img src="images/testimonials/client-2.jpg" alt="Moana Michell" class="testimonial-avatar"
+                    onerror="this.src='https://placehold.co/82x82/FEA116/fff?text=M'" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="t-slide" id="slide-t2">
+          <div class="row">
+            <div class="col-md-6 mb-5">
+              <div class="testimonial-card">
+                <p class="testimonial-card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo.</p>
+                <div class="testimonial-name">James Carter</div>
+                <div class="testimonial-role">Regular Customer</div>
+                <div class="testimonial-avatar-wrap">
+                  <img src="images/testimonials/client-3.jpg" alt="James Carter" class="testimonial-avatar"
+                    onerror="this.src='https://placehold.co/82x82/FEA116/fff?text=J'" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-5">
+              <div class="testimonial-card">
+                <p class="testimonial-card-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                  fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
+                <div class="testimonial-name">Sara Wilson</div>
+                <div class="testimonial-role">Food Blogger</div>
+                <div class="testimonial-avatar-wrap">
+                  <img src="images/testimonials/client-4.jpg" alt="Sara Wilson" class="testimonial-avatar"
+                    onerror="this.src='https://placehold.co/82x82/FEA116/fff?text=S'" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.t-slides -->
+
+      <!-- CSS-only prev/next labels -->
+      <div class="t-controls testimonial-controls">
+        <label for="t2" class="t-btn t-btn-label"><i class="fa fa-chevron-left"></i></label>
+        <label for="t1" class="t-btn t-btn-label"><i class="fa fa-chevron-right"></i></label>
+      </div>
+
+    </div>
+  </section>
+
+
+<!-- footer section -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4 text-center">
+
+      <!-- Contact Us -->
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-heading">Contact Us</div>
+        <ul class="list-unstyled">
+          <li class="mb-3 d-flex align-items-center justify-content-center gap-2">
+            <i class="fa fa-map-marker-alt text-white"></i>
+            <span class="footer-contact-text text-white">Location</span>
+          </li>
+          <li class="mb-3 d-flex align-items-center justify-content-center gap-2">
+            <i class="fa fa-phone text-white"></i>
+            <span class="footer-contact-text text-white">Call +01 1234567890</span>
+          </li>
+          <li class="mb-3 d-flex align-items-center justify-content-center gap-2">
+            <i class="fa fa-envelope text-white"></i>
+            <a href="mailto:demo@gmail.com" class="footer-contact-link text-white">demo@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Brand Center -->
+      <div class="col-lg-4 col-md-6">
+        <span class="footer-brand d-block mb-3">Feane</span>
+        <p class="footer-desc text-white">Necessary, making this the first true generator <br>
+          on the Internet. It uses a dictionary of over 200 <br>
+          Latin words, combined with</p>
+        <div class="d-flex gap-2 justify-content-center mt-3">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-heading">Opening Hours</div>
+        <p class="footer-contact-text text-white mb-2">Everyday</p>
+        <p class="footer-contact-text text-white">10.00 Am -10.00 Pm</p>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider" />
+
+    <p class="footer-copy mb-1 text-white">&copy; 2026 All Rights Reserved By Free Html Templates</p>
+    <p class="footer-copy text-white">&copy; Distributed By ThemeWagon</p>
+
+  </div>
+</footer>
+
+
+  <!-- Bootstrap JS bundle (for navbar collapse only – no custom JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

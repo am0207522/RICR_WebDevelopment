@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu – Feane Restaurant</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="site-nav navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">Feane</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <i class="fa fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="/feane_proj/index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link active-link" href="/feane_proj/pages/menu.html">MENU</a></li>
+        <li class="nav-item"><a class="nav-link" href="/feane_proj/pages/about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="/feane_proj/pages/book-table.html">BOOK TABLE</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="#"><i class="fa fa-user"></i></a>
+        <a href="#"><i class="bi bi-cart-fill"></i></a>
+        <a href="#"><i class="fa fa-search"></i></a>
+        <a href="menu.html" class="nav-link btn-order-online ms-2">Order Online</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- menu.html PAGE HERO -->
+ 
+<!-- MENU -->
+<section class="menu-section section-pad">
+  <div class="container">
+    <h2 class="sec-title">Our Menu</h2>
+
+    <!-- CSS filter radios -->
+    <input type="radio" class="filter-radio" id="filter-all"    name="mfilter" checked />
+    <input type="radio" class="filter-radio" id="filter-burger" name="mfilter" />
+    <input type="radio" class="filter-radio" id="filter-pizza"  name="mfilter" />
+    <input type="radio" class="filter-radio" id="filter-pasta"  name="mfilter" />
+    <input type="radio" class="filter-radio" id="filter-fries"  name="mfilter" />
+
+    <div class="filter-group">
+      <label class="filter-pill active" for="filter-all">All</label>
+      <label class="filter-pill" for="filter-burger">Burger</label>
+      <label class="filter-pill" for="filter-pizza">Pizza</label>
+      <label class="filter-pill" for="filter-pasta">Pasta</label>
+      <label class="filter-pill" for="filter-fries">Fries</label>
+    </div>
+
+    <div class="row menu-grid">
+         <!-- col-1 -->
+      <div class="col-lg-4 col-md-6" data-cat="pizza">
+        <div class="menu-card">
+          <div class="menu-card-top"><img src="../Images/Pizza_Menu.png" alt="Pizza"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-name">Delicious Pizza</div>
+            <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+            <div class="menu-card-foot"><span class="menu-price">$20</span><button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button></div>
+          </div>
+        </div>
+      </div>
+
+         <!-- col-2 -->
+      <div class="col-lg-4 col-md-6" data-cat="burger">
+        <div class="menu-card">
+          <div class="menu-card-top"><img src="../Images/Burger_item.png" alt="Burger" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-name">Delicious Burger</div>
+            <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+            <div class="menu-card-foot"><span class="menu-price">$15</span><button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button></div>
+          </div>
+        </div>
+      </div>
+
+         <!-- col-3 -->
+      <div class="col-lg-4 col-md-6" data-cat="pizza">
+        <div class="menu-card">
+          <div class="menu-card-top"><img src="../Images/Pizza_Item_2.png" alt="Pizza"/></div>
+          <div class="menu-card-body">
+            <div class="menu-card-name">Delicious Pizza</div>
+            <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+            <div class="menu-card-foot"><span class="menu-price">$17</span><button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button></div>
+          </div>
+        </div>
+      </div>
+
+         <!-- col-4 -->
+      <div class="col-lg-4 col-md-6" data-cat="pasta">
+        <div class="menu-card">
+          <div class="menu-card-top"><img src="../Images/Pasta_Item_1.png" alt="Pasta" /></div>
+          <div class="menu-card-body">
+            <div class="menu-card-name">Delicious Pasta</div>
+            <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+            <div class="menu-card-foot"><span class="menu-price">$18</span><button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button></div>
+          </div>
+        </div>
+      </div>
+
+         <!-- col-5 -->
+      <div class="col-lg-4 col-md-6" data-cat="fries">
+        <div class="menu-card">
+          <div class="menu-card-top"><img src="../Images/FrenchFries_Item_1.png" alt="Fries"/></div>
+          <div class="menu-card-body">
+            <div class="menu-card-name">French Fries</div>
+            <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+            <div class="menu-card-foot"><span class="menu-price">$10</span><button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button></div>
+          </div>
+        </div>
+      </div>
+
+         <!-- col-6 -->
+      <div class="col-lg-4 col-md-6" data-cat="pizza">
+        <div class="menu-card">
+          <div class="menu-card-top"><img src="../Images/Pizza_Item_3.png" alt="Pizza"/></div>
+          <div class="menu-card-body">
+            <div class="menu-card-name">Delicious Pizza</div>
+            <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+            <div class="menu-card-foot"><span class="menu-price">$15</span><button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button></div>
+          </div>
+        </div>
+      </div>
+
+         <!-- col-7 -->
+      <div class="col-lg-4 col-md-6" data-cat="burger">
+        <div class="menu-card">
+          <div class="menu-card-top"><img src="../Images/Burger_Item_2.png" alt="Burger"/></div>
+          <div class="menu-card-body">
+            <div class="menu-card-name">Tasty Burger</div>
+            <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+            <div class="menu-card-foot"><span class="menu-price">$12</span><button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button></div>
+          </div>
+        </div>
+      </div>
+
+         <!-- col-8 -->      
+      <div class="col-lg-4 col-md-6" data-cat="burger">
+        <div class="menu-card">
+          <div class="menu-card-top"><img src="../Images/Burger_Item_3.png" alt="Burger"/></div>
+          <div class="menu-card-body">
+            <div class="menu-card-name">Tasty Burger</div>
+            <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+            <div class="menu-card-foot"><span class="menu-price">$14</span><button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button></div>
+          </div>
+        </div>
+      </div>
+
+         <!-- col-9 -->
+      <div class="col-lg-4 col-md-6" data-cat="pasta">
+        <div class="menu-card">
+          <div class="menu-card-top"><img src="../Images/Pasta_Item_2.png" alt="Pasta"/></div>
+          <div class="menu-card-body">
+            <div class="menu-card-name">Delicious Pasta</div>
+            <p class="menu-card-desc">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+            <div class="menu-card-foot"><span class="menu-price">$10</span><button class="btn-cart-round"><i class="fa fa-shopping-cart"></i></button></div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.menu-grid -->
+     <!-- View More -->
+      <div class="text-center mt-4">
+        <a href="/feane_proj/pages/menu.html" class="btn-gold">View More</a>
+      </div>
+
+  </div>
+</section>
+
+<!-- footer section -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4 text-center">
+
+      <!-- Contact Us -->
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-heading">Contact Us</div>
+        <ul class="list-unstyled">
+          <li class="mb-3 d-flex align-items-center justify-content-center gap-2">
+            <i class="fa fa-map-marker-alt text-white"></i>
+            <span class="footer-contact-text text-white">Location</span>
+          </li>
+          <li class="mb-3 d-flex align-items-center justify-content-center gap-2">
+            <i class="fa fa-phone text-white"></i>
+            <span class="footer-contact-text text-white">Call +01 1234567890</span>
+          </li>
+          <li class="mb-3 d-flex align-items-center justify-content-center gap-2">
+            <i class="fa fa-envelope text-white"></i>
+            <a href="mailto:demo@gmail.com" class="footer-contact-link text-white">demo@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Brand Center -->
+      <div class="col-lg-4 col-md-6">
+        <span class="footer-brand d-block mb-3">Feane</span>
+        <p class="footer-desc text-white">Necessary, making this the first true generator <br>
+          on the Internet. It uses a dictionary of over 200 <br>
+          Latin words, combined with</p>
+        <div class="d-flex gap-2 justify-content-center mt-3">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="col-lg-4 col-md-4">
+        <div class="footer-heading">Opening Hours</div>
+        <p class="footer-contact-text text-white mb-2">Everyday</p>
+        <p class="footer-contact-text text-white">10.00 Am -10.00 Pm</p>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider" />
+
+    <p class="footer-copy mb-1 text-white">&copy; 2026 All Rights Reserved By Free Html Templates</p>
+    <p class="footer-copy text-white">&copy; Distributed By ThemeWagon</p>
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.DS_Store
+.CFUserTextEncoding
+.viminfo
+.gitconfig
+node_modules/
+*.zip
+.docker/
+config.json

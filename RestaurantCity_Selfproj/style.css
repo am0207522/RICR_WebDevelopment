@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+/* NAVBAR */
+#mainNav {
+  background-color: #1c1c1c;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+#mainNav .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-style: italic;
+  color: #ffffff;
+  padding-bottom: 4px;
+}
+
+#mainNav .navbar-brand.active-brand {
+  border-bottom: 2px solid #5cb85c;
+}
+
+#mainNav .nav-link.active-link {
+  color: #ffffff !important;
+  border-bottom: 2px solid #5cb85c;
+  padding-bottom: 4px;
+}
+
+#mainNav .nav-link {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  transition: color 0.3s;
+}
+
+#mainNav .nav-link:hover,
+#mainNav .nav-link.active-link {
+  color: #ffffff;
+}
+
+/* about.html */
+.about-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  border: 2px solid #000;
+  display: inline-block;
+  padding: 8px 40px;
+}
+
+.about-text {
+  font-size: 0.95rem;
+  line-height: 2;
+  text-align: justify;
+  color: #474444;
+}
+.about-img {
+  height: 210px;
+  object-fit: cover;
+}
+
+
+/* HERO */
+.hero-section {
+  min-height: 100vh;
+  background: url('/RestaurantCity_Selfproj/Images/restaurant_Hero-bg1.avif') center center / cover no-repeat;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-section > div {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.hero-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.hero-divider {
+  width: 120px;
+  border: 1px solid rgba(255,255,255,0.7);
+  margin-top: 16px;
+}
+
+/* pricing */
+/* PRICING PARALLAX HEADING */
+.pricing-parallax {
+  background: url('/mycravings_project/images/bgImagetermHero1.jpg') center center / cover fixed;
+  min-height: 350px;
+  margin-left: -12px;
+  margin-right: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-parallax .section-title {
+  color: #ffffff !important;
+  font-size: 3rem;
+}
+
+/* FOOD CARDS */
+.food-card {
+  overflow: hidden;
+}
+
+.food-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.food-card:hover img {
+  transform: scale(1.05);
+}
+
+.food-price {
+  background: rgba(200, 30, 30, 0.85);
+}
+
+/* PAGE TOP - for inner pages */
+.page-top {
+  padding-top: 100px !important;
+}
+
+/* hero SECTION TITLES */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+}
+
+.section-desc {
+  max-width: 680px;
+}
+
+/* FOOD ICONS */
+.food-icon {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+
+/* FEATURED CAROUSEL */
+.featured-img {
+  max-height: 500px;
+  object-fit: cover;
+}

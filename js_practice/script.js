@@ -196,3 +196,76 @@ class Dog extends Animal {
 const myDog = new Dog("Bruno");
 myDog.speak();               // Inherited method
 myDog.learnTrick("Shake");   // New method
+
+
+
+
+
+// ================================
+// OPERATORS
+// ================================
+
+// 1. ARITHMETIC — basic maths
+let a = 10;
+let b = 3;
+
+console.log(a + b);  // 13  jodna
+console.log(a - b);  // 7   ghatana
+console.log(a * b);  // 30  multiply
+console.log(a / b);  // 3.33 divide
+console.log(a % b);  // 1   remainder (modulus)
+console.log(a ** b); // 1000 power (10^3)
+
+// 2. COMPARISON — true/false deta hai
+console.log(5 == "5");  // true  (sirf value check, type nahi)
+console.log(5 === "5"); // false (value + type dono check) ✅ use this
+console.log(5 !== 3);   // true  (not equal)
+console.log(10 > 5);    // true
+console.log(10 >= 10);  // true
+
+// 3. ASSIGNMENT — value dene ke shortcuts
+let x = 10;
+x += 5;  // x = x + 5  =>  15
+x -= 3;  // x = x - 3  =>  12
+x *= 2;  // x = x * 2  =>  24
+x++;     // x = x + 1  =>  25
+x--;     // x = x - 1  =>  24
+console.log(x); // 24
+
+
+
+
+
+
+// ================================
+// STRINGS
+// ================================
+
+// 3 tarike string banane ke
+let s1 = 'Single quote';
+let s2 = "Double quote";
+let s3 = `Backtick (template literal)`;
+
+console.log(s1); // Single quote
+console.log(s2); // Double quote
+console.log(s3); // Backtick (template literal)
+
+// Length — kitne characters hain
+let name = "Rahul";
+console.log(name.length); // 5
+
+// Index se character nikalo
+console.log(name[0]);      // "R"  (pehla)
+console.log(name[4]);      // "l"  (paanchwa)
+console.log(name.at(-1));  // "l"  (aakhri) — modern tarika
+console.log(name.at(-2));  // "u"  (aakhri se doosra)
+
+// String + Number = String (concatenation)
+console.log("Age: " + 20);    // "Age: 20"
+console.log(5 + 3 + " hi");   // "8 hi"
+console.log("hi " + 5 + 3);   // "hi 53" (careful!)
+
+// Strings immutable hain — change nahi hoti
+let word = "hello";
+word[0] = "H"; // ❌ silently fail — kuch nahi hoga
+console.log(word); // "hello" — wahi rahega

@@ -85,3 +85,114 @@ switch(day) {
         console.log("Ek aur din...");
 }
 // Output: Somvar - Week shuru!
+
+
+
+
+
+
+
+// ================================
+// ARRAYS
+// ================================
+
+let students = ["Amit", "Priya", "Rohan"];
+
+// End mein add karo
+students.push("Sunita");
+console.log(students); // ["Amit","Priya","Rohan","Sunita"]
+
+// Last item remove karo
+students.pop();
+console.log(students); // ["Amit","Priya","Rohan"]
+
+// Filter — sirf matching items nikalo
+let marks = [85, 42, 91, 38, 76];
+let passed = marks.filter(m => m >= 50);
+console.log(passed); // [85, 91, 76]
+
+// find — pehla matching item
+let topScore = marks.find(m => m > 90);
+console.log(topScore); // 91
+
+// includes — check karo hai ya nahi
+console.log(students.includes("Priya")); // true
+
+// length — kitne items hain
+console.log(students.length); // 3
+
+
+
+
+
+
+// ================================
+// LOOPS
+// ================================
+
+// for loop — exact times pata ho tab
+for (let i = 1; i <= 5; i++) {
+    console.log("Student #" + i);
+}
+// Student #1, #2, #3, #4, #5
+
+// while loop — jab tak condition true ho
+let count = 0;
+while (count < 3) {
+    console.log("Counting:", count);
+    count++;
+}
+
+// Array pe loop — forEach (most common!)
+let cities = ["Delhi", "Mumbai", "Pune"];
+cities.forEach(city => {
+    console.log(`City: ${city}`);
+});
+
+// map — array transform karna
+let prices = [100, 200, 300];
+let withGST = prices.map(p => p * 1.18);
+console.log(withGST); // [118, 236, 354]
+
+
+
+
+// ================================
+// CLASSES & OBJECTS
+// ================================
+
+// Class banao
+class Animal {
+    constructor(name, sound) {
+        this.name = name;
+        this.sound = sound;
+    }
+
+    speak() {
+        console.log(`${this.name} kehta hai: ${this.sound}`);
+    }
+}
+
+// Objects banao class se (new keyword)
+const dog = new Animal("Tommy", "Bhow Bhow");
+const cat = new Animal("Mitthu", "Meow");
+
+dog.speak(); // Tommy kehta hai: Bhow Bhow
+cat.speak(); // Mitthu kehta hai: Meow
+
+// Inheritance — ek class doosri se seekhe (extends)
+class Dog extends Animal {
+    constructor(name) {
+        super(name, "Bhow!"); // parent class call
+        this.tricks = [];
+    }
+
+    learnTrick(trick) {
+        this.tricks.push(trick);
+        console.log(`${this.name} ne seekha: ${trick}`);
+    }
+}
+
+const myDog = new Dog("Bruno");
+myDog.speak();               // Inherited method
+myDog.learnTrick("Shake");   // New method

@@ -1,0 +1,9 @@
+/* q.2 style.css */
+body {
+    background-color: lightgray;
+}
+
+.h1{
+    color: rgb(238, 134, 8);
+    font-size: 30px;
+}

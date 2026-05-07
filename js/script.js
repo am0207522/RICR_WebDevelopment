@@ -100,8 +100,6 @@ console.log(ar2.find((val) => val > 20));
 
 console.log(ar2.slice(0,7));
 
-
-
 // ..............................................
 let ab = "This is Web Developement Class"
 console.log(ab);

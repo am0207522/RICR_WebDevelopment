@@ -1,15 +1,19 @@
-const defaults = { bg: '#ffffff', heading: '#111111', para: '#444444'};
+const defaults = { 
+  bg: '#ffffff', 
+  heading: '#111111', 
+  para: '#444444'
+};
 
 document.getElementById('bg-color').addEventListener('input', e => {
-  document.getElementById('preview-box').style.background = e.target.value;
+  document.getElementById('para-box').style.background = e.target.value;
 });
 
 document.getElementById('heading-color').addEventListener('input', e => {
-  document.getElementById('prev-heading').style.color = e.target.value;
+  document.getElementById('para-heading').style.color = e.target.value;
 });
 
 document.getElementById('para-color').addEventListener('input', e => {
-  document.getElementById('prev-para').style.color = e.target.value;
+  document.getElementById('para-para').style.color = e.target.value;
 });
 
 document.getElementById('reset-btn').addEventListener('click', () => {
@@ -17,13 +21,10 @@ document.getElementById('reset-btn').addEventListener('click', () => {
   document.getElementById('heading-color').value = defaults.heading;
   document.getElementById('para-color').value = defaults.para;
 
-  document.getElementById('preview-box').style.background = defaults.bg;
-  document.getElementById('prev-heading').style.color = defaults.heading;
-  document.getElementById('prev-para').style.color = defaults.para;
+  document.getElementById('para-box').style.background = defaults.bg;
+  document.getElementById('para-heading').style.color = defaults.heading;
+  document.getElementById('para-para').style.color = defaults.para;
 });
-
-
-
 
 
 

@@ -1,0 +1,13 @@
+#container{
+    width: 500px;
+    height: 550px;
+    background-color: rgb(17, 159, 236);
+    border-radius: 0px 14px;
+
+}
+#head{
+    background-color: rgb(250, 190, 79);
+}
+.InputBox{
+    border: 2px solid rgb(4, 5, 5);
+}

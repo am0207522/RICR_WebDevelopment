@@ -1,0 +1,22 @@
+body {
+  background-color: #f0f2f5;
+}
+
+#calcCard {
+  width: 350px;
+}
+
+.form-control {
+  border: 1.5px solid #0d6efd;
+  border-radius: 8px;
+}
+
+/* .form-control {
+  border: 1.5px solid #dee2e6;
+} */
+
+.form-control:focus {
+  border: 2.9px solid rgb(29, 29, 29) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}

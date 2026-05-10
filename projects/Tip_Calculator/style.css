@@ -1,0 +1,85 @@
+body {
+  background-color: #0d1b4b;
+}
+
+#mainCard {
+  width: 360px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+#cardHeader {
+  background-color: #f47c1a;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-radius: 18px 18px 0 0;
+}
+
+#cardBody {
+  border-radius: 0 0 18px 18px;
+}
+
+/* Orange labels exactly like GIF */
+#labelOrange,
+#labelOrange2,
+#labelOrange3 {
+  color: #f47c1a;
+}
+#lavelBlack{
+    color:lightbla
+}
+
+/* Bottom border only inputs - exactly like GIF */
+.custom-input {
+  border: none;
+  border-bottom: 1.5px solid #a0a0a0;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  padding: 6px 0;
+  font-size: 0.95rem;
+  color: #333;
+  width: 100%;
+}
+
+.custom-input:focus {
+  border-bottom: 1.5px solid #a0a0a0;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent;
+}
+
+.custom-input::placeholder {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+}
+
+/* Dropdown arrow styling */
+select.custom-input {
+  appearance: auto;
+  cursor: pointer;
+}
+
+/* Bill group rupee symbol line */
+#billGroup {
+  border-bottom: 1.5px solid #a0a0a0;
+}
+
+#billGroup .custom-input {
+  border-bottom: none;
+}
+
+/* Teal Calculate button exactly like GIF */
+#calcBtn {
+  background-color: #2ec4c4;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 160px;
+}
+
+#calcBtn:hover {
+  background-color: #28aaaa;
+}

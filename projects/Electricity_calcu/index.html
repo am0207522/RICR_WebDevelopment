@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electricity Bill Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="form" class="mt-5">
+    <div id="container" class="m-auto">
+        <div id="forms" class="w-75 m-auto pt-4">
+            <div id="head" class="border rounded-3 text-center">
+                <h2>Electricity Bill Calculator</h2>
+            </div>
+            <form action="" class="bg-white border rounded-3 shadow mt-3 p-5 d-flex flex-column gap-3">
+                <label for="billAmount">Electricity units </label>
+                <input type="number" class="form-control InputBox" id="billUnit" />
+
+                <div>
+                    <button type="submit" class="btn btn-danger border rounded-2 mb-4 mt-2">
+                        Calculate
+                    </button>
+                    <button type="reset" class="btn btn-danger border rounded-2 mb-4 mt-2">
+                        Reset
+                    </button>
+                </div>
+                <div id="" clas="  text-center d-flex flex-column m-auto">
+                    <div class="fw-bold">Total Unit: <span id="unit">XX U</span></div>
+                    <div class="fw-bold">
+                        Subtotal Bill: <span id="subtotal">XX ₹</span>
+                    </div>
+
+                    <div class="fw-bold">
+                        Surcharge Amount: <span id="SurchargeAmount">XX ₹</span>
+                    </div>
+                    <div class="fw-bold">
+                        Total Bill: <span id="totalBill">XX ₹</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

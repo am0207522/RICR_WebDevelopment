@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Bill Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+  <div class="min-vh-100 d-flex align-items-center justify-content-center py-5">
+    <div class="card shadow-lg" id="mainCard">
+
+        <div class="card-header text-white text-center py-3" id="cardHeader">
+        <h4 class="mb-0 fw-bold">Travel Bill Calculator</h4>
+      </div>
+      
+      <div class="card-body p-4">
+        <div class="alert mb-4" id="cardInfo">
+          <p class="fw-semibold mb-2">💡 Fare Slabs:</p>
+          <ul class="mb-0 small">
+            <li>First 10 km → Rs. 11/km</li>
+            <li>Next 40 km (11–50) → Rs. 10/km</li>
+            <li>Next 50 km (51–100) → Rs. 9/km</li>
+            <li>Above 100 km → Rs. 8/km</li>
+          </ul>
+        </div>
+
+        <!-- Input -->
+        <label class="form-label fw-semibold">Enter Kilometers Covered</label>
+        <div class="input-group mb-2">
+          <input
+            type="number"
+            id="kmInput"
+            class="form-control form-control-lg"
+            placeholder="e.g. 100.5"
+            min="0"
+            step="any"
+          />
+          <span class="input-group-text">km</span>
+        </div>
+        <p 
+        class="text-danger small d-none mb-3" 
+        id="errorMsg">
+          Please enter a non-negative number of kilometress.
+        </p>
+        <div class="d-grid mt-3">
+          <button class="btn btn-lg text-white fw-semibold" id="calcBtn" onclick="calculateBill()">
+            Calculate Bill
+          </button>
+        </div>
+        <div class="mt-4 d-none" id="resultBox">
+          <hr />
+          <div class="text-center mb-3">
+            <p class="mb-1 text-muted small fw-semibold">TOTAL BILL</p>
+            <h3 class="fw-bold" id="totalBill"></h3>
+          </div>
+          <p class="fw-semibold mb-2">Breakdown:</p>
+          <div id="breakdown"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmDXMvvZP7q+TnKZSmEFJ5u6LxbH"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+</body>
+</html>

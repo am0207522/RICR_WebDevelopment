@@ -113,7 +113,7 @@ const validateTimings = () => {
 //  Attach time listener
 document
   .querySelectorAll("input[name='timings']")
-  .forEach((cb) => cb.addEventListener("change", vailidateTimings));
+  .forEach((cb) => cb.addEventListener("change", validateTimings));
 
 // Forms submission
 document.getElementById("registrationForm").addEventListener("submit", (e) => {

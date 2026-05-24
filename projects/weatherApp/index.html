@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-card shadow-lg p-4">
+
+      <h4 class="text-center mb-4 fw-bold">
+        <i class="bi bi-cloud-sun-fill me-2 text-warning"></i>Weather App
+      </h4>
+
+      <!-- Search -->
+      <div class="input-group mb-4">
+        <input
+          type="text"
+          id="cityName"
+          class="form-control search-input"
+          placeholder="Enter city name..."
+          onkeydown="if(event.key==='Enter') getWeather()"
+        />
+        <button class="btn btn-search" onclick="getWeather()">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+
+      <!-- Error -->
+      <div id="errorMsg" class="alert alert-danger py-2 text-center" role="alert">
+        City not found. Please try again.
+      </div>
+
+      <!-- Loader -->
+      <div id="loader" class="text-center py-3">
+        <div class="spinner-border text-light" role="status"></div>
+        <p class="mt-2 text-white-50 small">Fetching weather...</p>
+      </div>
+
+      <!-- Weather Result -->
+      <div id="weatherResult" class="text-center">
+        <p id="cityLabel" class="fs-5 mb-1 fw-semibold"></p>
+        <p id="countryLabel" class="text-white-50 small mb-3"></p>
+        <div id="weatherIcon" class="weather-icon mb-2"></div>
+        <div class="temp-display mb-1" id="Temperature">--</div>
+        <p class="fs-6 text-white-50">°Celsius</p>
+        <p id="weatherDesc" class="text-capitalize fs-6 mb-4"></p>
+
+        <div class="row g-3 mt-1">
+          <div class="col-4">
+            <div class="info-box p-2 rounded">
+              <i class="bi bi-droplet-fill text-info"></i>
+              <p class="mb-0 small fw-bold" id="humidity">--%</p>
+              <p class="mb-0 info-label">Humidity</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="info-box p-2 rounded">
+              <i class="bi bi-wind text-success"></i>
+              <p class="mb-0 small fw-bold" id="windSpeed">-- m/s</p>
+              <p class="mb-0 info-label">Wind</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="info-box p-2 rounded">
+              <i class="bi bi-thermometer-half text-warning"></i>
+              <p class="mb-0 small fw-bold" id="feelsLike">--°C</p>
+              <p class="mb-0 info-label">Feels Like</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

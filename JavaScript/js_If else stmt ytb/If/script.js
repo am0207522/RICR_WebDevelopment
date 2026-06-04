@@ -1,0 +1,19 @@
+// if (condition){
+//   Code block to be executed if the condition is true
+// }
+
+let speed = 90;
+
+if(speed > 90){
+    console.log("OverSpeeding");
+}
+
+if(speed > 50 && speed <=90){
+    console.log("Normal");
+}
+
+if(speed <= 50){
+    console.log("Slow");
+}
+
+// Output: "Normal"

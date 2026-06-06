@@ -1,4 +1,4 @@
-import { FaWifi } from "react-icons/fa";
+import { FaAppStoreIos, FaWifi } from "react-icons/fa";
 import { IoIosSave } from "react-icons/io";
 import myImage from "./assets/myImage.jpg";
 

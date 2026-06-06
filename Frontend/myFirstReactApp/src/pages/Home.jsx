@@ -1,8 +1,27 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
 function Home() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="container d-flex justify-content-center align-items-center">
-        <span className="text-primary fs-2">Home</span>
+        <div className="border p-3 w-50 mt-5 bg-light shadow rounded">
+          <h1 className="text-center">Welcome to Home Page!!!</h1>
+          <p className="text-center">
+            We have a wide range of Clothings, Footwear and Accessories for you.
+            Please check our products and enjoy shopping with us.
+          </p>
+
+          <div className="d-flex justify-content-center mt-4">
+            <button
+              className="btn btn-primary me-2"
+              onClick={() => navigate("/product")}
+            >
+              Check our Products
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );

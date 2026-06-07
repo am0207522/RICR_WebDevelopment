@@ -2,41 +2,35 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="bg-primary-subtle shadow-sm px-4 py-3 d-flex justify-content-between align-items-center">
-      
-      <div className="text-primary fw-bold fs-3">
+    <div className="bg-warning shadow-sm px-4 py-3 d-flex justify-content-between align-items-center">
+      <Link to="/" className="text-white fw-bold fs-3 text-decoration-none">
         My Company
-      </div>
+      </Link>
 
       <div className="d-flex gap-4">
-        <Link className="text-primary fw-semibold" to="/">
+        <Link className="text-white fw-semibold" to="/">
           Home
         </Link>
-        <Link className="text-primary fw-semibold" to="/about">
+        <Link className="text-white fw-semibold" to="/about">
           About
         </Link>
-        <Link className="text-primary fw-semibold" to="/product">
+        <Link className="text-white fw-semibold" to="/product">
           Product
         </Link>
-        <Link className="text-primary fw-semibold" to="/contact-us">
+        <Link className="text-white fw-semibold" to="/contact-us">
           Contact Us
         </Link>
       </div>
 
       <div className="d-flex gap-2">
         <Link to="/login">
-          <button className="btn btn-outline-primary px-4">
-            Login
-          </button>
+          <button className="btn btn-outline-white px-4 bg-body">Login</button>
         </Link>
 
         <Link to="/register">
-          <button className="btn btn-primary px-4">
-            Register
-          </button>
+          <button className="btn btn-white px-4 bg-body">Register</button>
         </Link>
       </div>
-
     </div>
   );
 }

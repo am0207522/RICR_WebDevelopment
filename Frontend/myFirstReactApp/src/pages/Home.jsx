@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -9,7 +8,7 @@ function Home() {
         <div className="border p-3 w-50 mt-5 bg-light shadow rounded">
           <h1 className="text-center">Welcome to Home Page!!!</h1>
           <p className="text-center">
-            We have a wide range of Clothings, Footwear and Accessories for you.
+            We have wide range of Chothings, Footwear and Accessories for you.
             Please check our products and enjoy shopping with us.
           </p>
 

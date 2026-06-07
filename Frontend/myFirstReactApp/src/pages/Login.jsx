@@ -68,18 +68,13 @@ function Login() {
 
   return (
     <div className="container mt-5">
-      <div
-        className="card shadow p-4 mx-auto"
-        style={{ maxWidth: "720px" }}
-      >
+      <div className="card shadow p-4 mx-auto" style={{ maxWidth: "720px" }}>
         <div className="forms">
           <h2 className="text-center mb-3" id="wb">
             Welcome Back
           </h2>
 
-          <p className="text-center">
-            Login to your Cravings account.
-          </p>
+          <p className="text-center">Login to your Cravings account.</p>
 
           <form onSubmit={handleSubmit}>
             <div className="mb-3 w-100">
@@ -157,17 +152,13 @@ function Login() {
               </div>
             </div>
 
-            <button 
-              type="submit" 
-              className="btn btn-primary me-2">
-               Register
-            </button>
+            <div className="d-flex justify-content-center">
+              <button className="btn btn-primary">Login</button>
+            </div>
 
             <div className="d-flex align-items-center justify-content-center">
               <hr className="w-25" />
-              <p className="text-center mt-3 px-2">
-                Don't have an account?
-              </p>
+              <p className="text-center mt-3 px-2">Don't have an account?</p>
               <hr className="w-25" />
             </div>
 

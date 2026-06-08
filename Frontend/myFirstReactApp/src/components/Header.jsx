@@ -1,37 +1,42 @@
-import { Link } from "react-router-dom";
-
 function Header() {
   return (
-    <div className="bg-warning shadow-sm px-4 py-3 d-flex justify-content-between align-items-center">
-      <Link to="/" className="text-white fw-bold fs-3 text-decoration-none">
-        My Company
-      </Link>
+    <>
+      <header
+        className="d-flex justify-content-between align-items-center px-5 py-3"
+        style={{ backgroundColor: "#f35e39" }}
+      >
+        {/* Logo */}
+        <div>
+          <img
+            src="src/assets/hero.png"
+            alt="Logo"
+            style={{ height: "20px" }}
+          />
+        </div>
 
-      <div className="d-flex gap-4">
-        <Link className="text-white fw-semibold" to="/">
-          Home
-        </Link>
-        <Link className="text-white fw-semibold" to="/about">
-          About
-        </Link>
-        <Link className="text-white fw-semibold" to="/product">
-          Product
-        </Link>
-        <Link className="text-white fw-semibold" to="/contact-us">
-          Contact Us
-        </Link>
-      </div>
+        {/* Right Side Buttons */}
+        <div className="d-flex align-items-center gap-4">
+          <a
+            href="/login"
+            className="text-white text-decoration-none fw-medium"
+          >
+            Login
+          </a>
 
-      <div className="d-flex gap-2">
-        <Link to="/login">
-          <button className="btn btn-outline-white px-4 bg-body">Login</button>
-        </Link>
-
-        <Link to="/register">
-          <button className="btn btn-white px-4 bg-body">Register</button>
-        </Link>
-      </div>
-    </div>
+          <a
+            href="/register"
+            className="btn btn-light px-4 py-2"
+            style={{
+              color: "#C64626",
+              borderRadius: "6px",
+              fontWeight: "500",
+            }}
+          >
+            Register
+          </a>
+        </div>
+      </header>
+    </>
   );
 }
 

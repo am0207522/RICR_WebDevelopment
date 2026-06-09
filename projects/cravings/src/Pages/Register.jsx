@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import foodTable from "../assets/foodTable.webp";
+// import foodTable from "../assets/foodTable.webp";
 
 const Register = () => {
   const [role, setRole] = useState("customer");
 
   return (
     <div
-      className="h-[90vh] flex items-center justify-end bg-cover bg-center p-10 md:pe-30"
-      style={{ backgroundImage: `url(${foodTable})` }}
+      className="h-[90vh] bg-[url('public/foodTable.webp')] flex items-center justify-end bg-cover bg-center p-10 md:pe-30"
+      // style={{ backgroundImage: `url(${foodTable})` }}
     >
-      <div className="bg-white rounded-lg shadow-md px-10 py-6 max-w-md w-full">
+      <div className="bg-white rounded-xl shadow-md px-10 py-6 max-w-md w-full">
         <h2 className="text-center text-3xl font-bold text-[#c0392b] mb-2">
           Create Account
         </h2>
@@ -25,7 +25,10 @@ const Register = () => {
             </span>
             <div className="flex flex-wrap gap-4">
               {["customer", "restaurant", "rider"].map((r) => (
-                <label key={r} className="flex items-center gap-1 cursor-pointer text-gray-700">
+                <label
+                  key={r}
+                  className="flex items-center gap-1 cursor-pointer text-gray-700"
+                >
                   <input
                     type="radio"
                     name="role"

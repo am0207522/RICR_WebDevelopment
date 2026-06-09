@@ -1,17 +1,11 @@
 import { useState } from "react";
-import foodTable from "../assets/foodTable.webp";
+// import foodTable from "../assets/foodTable.webp";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="relative h-[90vh] w-full">
-      {/* Background Image */}
-      <img
-        src={foodTable}
-        alt="foodTable"
-        className="w-full h-[90vh] object-cover"
-      />
+    <div className="relative h-[90vh] bg-[url('public/foodTable.webp')]  w-full">
 
       {/* Login Form */}
       <div className="absolute top-[15%] left-[8%] w-[90%] max-w-[445px] bg-white p-7 rounded-md shadow-lg">

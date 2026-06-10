@@ -17,7 +17,7 @@ const Product = () => {
 
           <div className="bg-white p-4">
             <h3 className="text-[16px] font-normal leading-6 text-gray-800">
-              ZOVO Portable Ice Cooling Fan | 6000mAh Rechargeable Hand Fan
+              Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
             </h3>
 
             <div className="flex items-center gap-2 mt-2">
@@ -53,7 +53,7 @@ const Product = () => {
 
           <div className="bg-white p-4">
             <h3 className="text-[16px] font-normal leading-6 text-gray-800">
-              Chill Portable Rechargeable Mini Fan with USB Charging
+              Mens Casual Premium Slim Fit T-Shirts 
             </h3>
 
             <div className="flex items-center gap-2 mt-2">
@@ -113,7 +113,7 @@ const Product = () => {
           </div>
         </div>
 
-                {/* Card 1 */}
+        {/* Card 4 */}
         <div className="border border-gray-200 bg-white">
           <div className="bg-gray-100 h-72 flex items-center justify-center p-4">
             <img
@@ -125,7 +125,7 @@ const Product = () => {
 
           <div className="bg-white p-4">
             <h3 className="text-[16px] font-normal leading-6 text-gray-800">
-              ZOVO Portable Ice Cooling Fan | 6000mAh Rechargeable Hand Fan
+              Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
             </h3>
 
             <div className="flex items-center gap-2 mt-2">
@@ -149,7 +149,7 @@ const Product = () => {
           </div>
         </div>
 
-        {/* Card 2 */}
+        {/* Card 5 */}
         <div className="border border-gray-200 bg-white">
           <div className="bg-gray-100 h-72 flex items-center justify-center p-4">
             <img
@@ -161,7 +161,7 @@ const Product = () => {
 
           <div className="bg-white p-4">
             <h3 className="text-[16px] font-normal leading-6 text-gray-800">
-              Chill Portable Rechargeable Mini Fan with USB Charging
+              Mens Casual Premium Slim Fit T-Shirts 
             </h3>
 
             <div className="flex items-center gap-2 mt-2">
@@ -186,7 +186,7 @@ const Product = () => {
         </div>
 
 
-        {/* Card 4 */}
+        {/* Card 6 */}
         <div className="border border-gray-200 bg-white">
           <div className="bg-gray-100 h-72 flex items-center justify-center p-4">
             <img
@@ -198,7 +198,7 @@ const Product = () => {
 
           <div className="bg-white p-4">
             <h3 className="text-[16px] font-normal leading-6 text-gray-800">
-              Slim Fit Casual Shirt for Men
+              Premium Slim Fit Casual Shirt for Men 
             </h3>
 
             <div className="flex items-center gap-2 mt-2">

@@ -1,101 +1,104 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import loading from "../assets/loading.svg";
 
 const About = () => {
+  const [aboutData, setAboutData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const fetchAboutData = async () => {
+    try {
+      setIsLoading(true);
+      const res = await fetch("https://fakestoreapi.com/products");
+
+      const data = [
+        {
+          title: "Fashion & Clothing",
+          image:
+            "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600",
+          desc: "Explore trendy outfits and fashion collections.",
+        },
+        {
+          title: "Furniture",
+          image:
+            "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600",
+          desc: "Modern furniture for your dream home.",
+        },
+        {
+          title: "Shoes & Footwear",
+          image:
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600",
+          desc: "Premium and comfortable footwear.",
+        },
+        {
+          title: "Home Decoration",
+          image:
+            "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600",
+          desc: "Decorate your home beautifully.",
+        },
+      ];
+
+      setAboutData(data);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchAboutData();
+  }, []);
+
   return (
-    <div className="bg-white px-8">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-
-        {/* Left Side Images */}
-        <div className="flex gap-6 justify-center">
-          <img
-            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600"
-            alt="Fashion"
-            className="w-72 h-[500px] object-cover rounded-xl shadow-lg"
-          />
-
-          <img
-            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600"
-            alt="Furniture"
-            className="w-72 h-[500px] object-cover rounded-xl shadow-lg mt-16"
-          />
+    <>
+      {isLoading ? (
+        <div className="w-full h-[90vh] flex justify-center items-center">
+          <img src={loading} alt="" className="w-32" />
         </div>
-
-        {/* Right Side Content */}
-        <div>
-          <p className="text-orange-500 font-semibold text-lg mb-3 py-4">
+      ) : (
+        <div className="p-10">
+          <h1 className="text-5xl font-bold text-center mb-4">
             About Us
-          </p>
-
-          <h1 className="text-5xl font-bold text-gray-800 mb-8 py-4leading-tight">
-            Your One-Stop Shopping Destination
           </h1>
 
-          <p className="text-gray-600 text-lg leading-8 mb-8">
-            Discover a wide range of products including fashion, shoes,
-            furniture, groceries, home décor, kitchen essentials, and much
-            more. We provide quality products at affordable prices with a
-            seamless shopping experience.
+          <p className="text-center text-gray-500 mb-10">
+            Your One-Stop Shopping Destination
           </p>
 
-          {/* Categories */}
-          <div className="grid grid-cols-2 gap-4 mb-8">
+          <div className="grid grid-cols-4 gap-5">
+            {aboutData.length > 0 &&
+              aboutData.map((item, index) => (
+                <div
+                  className="border rounded-xl shadow p-3"
+                  key={index}
+                >
+                  <div className="w-full h-52">
+                    <img
+                      src={item.image}
+                      alt=""
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
 
-            <div className="flex items-center gap-3">
-              <span className="text-green-500 text-xl">✔</span>
-              <span className="text-gray-700">Fashion & Clothing</span>
-            </div>
+                  <div className="mt-4">
+                    <h2 className="text-xl font-semibold">
+                      {item.title}
+                    </h2>
 
-            <div className="flex items-center gap-3">
-              <span className="text-green-500 text-xl">✔</span>
-              <span className="text-gray-700">Shoes & Footwear</span>
-            </div>
+                    <p className="text-gray-500 mt-2">
+                      {item.desc}
+                    </p>
 
-            <div className="flex items-center gap-3">
-              <span className="text-green-500 text-xl">✔</span>
-              <span className="text-gray-700">Furniture</span>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <span className="text-green-500 text-xl">✔</span>
-              <span className="text-gray-700">Home Decoration</span>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <span className="text-green-500 text-xl">✔</span>
-              <span className="text-gray-700">Kitchen Essentials</span>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <span className="text-green-500 text-xl">✔</span>
-              <span className="text-gray-700">Daily Groceries</span>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <span className="text-green-500 text-xl">✔</span>
-              <span className="text-gray-700">Electronics</span>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <span className="text-green-500 text-xl">✔</span>
-              <span className="text-gray-700">Fast Delivery</span>
-            </div>
-
+                    <button className="mt-4 bg-orange-400 px-4 py-2 rounded-full">
+                      Explore
+                    </button>
+                  </div>
+                </div>
+              ))}
           </div>
-
-          <p className="text-gray-600 text-lg leading-8 mb-8">
-            Our mission is to make online shopping easy, affordable, and
-            enjoyable. From everyday essentials to premium lifestyle products,
-            everything is available at your fingertips with quick and reliable
-            delivery.
-          </p>
-
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold shadow-md transition duration-300">
-            Shop Now
-          </button>
         </div>
-
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 

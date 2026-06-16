@@ -35,6 +35,30 @@ const About = () => {
             "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600",
           desc: "Decorate your home beautifully.",
         },
+        {
+          title: "Fashion & Clothing",
+          image:
+            "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600",
+          desc: "Explore trendy outfits and fashion collections.",
+        },
+        {
+          title: "Furniture",
+          image:
+            "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600",
+          desc: "Modern furniture for your dream home.",
+        },
+        {
+          title: "Shoes & Footwear",
+          image:
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600",
+          desc: "Premium and comfortable footwear.",
+        },
+        {
+          title: "Home Decoration",
+          image:
+            "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600",
+          desc: "Decorate your home beautifully.",
+        },
       ];
 
       setAboutData(data);

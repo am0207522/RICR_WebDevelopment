@@ -4,7 +4,7 @@ import { FaStore } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-orange-500 backdrop-blur-lg border-b border-gray-200 shadow-md">
+    <header className="sticky top-0 z-50 bg-sky-500 backdrop-blur-lg border-b border-gray-200 shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link
           to="/"

@@ -28,7 +28,7 @@ const Home = () => {
   {/* Input */}
   <input
     type="text"
-    placeholder="Search restaurants for foods ..."
+    placeholder="Search restaurants for foods ...."
     className="bg-white w-full outline-none text-orange-700"
   />
 

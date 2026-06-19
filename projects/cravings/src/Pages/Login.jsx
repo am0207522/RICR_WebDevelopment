@@ -54,7 +54,7 @@ const Login = () => {
           <div className="flex justify-between mb-5">
             <div className="flex items-center gap-2">
               <input type="checkbox" />
-              <label>Remember me</label>
+              <label>Remember mee</label>
             </div>
 
             <a

@@ -1,21 +1,35 @@
-import dotenv from "dotenv"; //environment variable load
+import dotenv from "dotenv";
 dotenv.config();
 
-import express from "express"; // express
+import express from "express";
+import AuthRouter from "./src/routers/auth.route.js";
+import PublicRouter from "./src/routers/public.route.js";
+import connectDB from "./src/config/dbConnection.config.js";
 
-const app = express(); // object
+const app = express();
 
+app.use(express.json());
+
+app.use("/auth", AuthRouter);
+app.use("/public", PublicRouter);
+
+//Default API
 app.get("/", (req, res) => {
   console.log("Default Get API Hit");
-  res.json({ message: "Welcome to my first backend Project" });  // api creations
-}); 
+  res.json({ message: "Welcome to my first backend Project" });
+});
 
-app.post("/login",(req,res) =>{
-    res.json({message:"Login Sucessfull"})
-})
+//Default Error Handler
+app.use((err, req, res, next) => {
+  const ErrMessage = err.message || "Internal Server Error";
+  const ErrStatusCode = err.statusCode || 500;
 
-const port = process.env.PORT || 5000; // verify the port
+  res.status(ErrStatusCode).json({ message: ErrMessage });
+});
+
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
-  console.log("Server Strated on PORT:", port);  //
+  console.log("Server Started on port:", port);
+  connectDB();
 });

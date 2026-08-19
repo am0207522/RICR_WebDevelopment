@@ -72,3 +72,4 @@ document.querySelector("form").addEventListener("reset", (event) => {
 // function fillBaseColor() {
 //   document.getElementById("bulb1").style.backgroundColor = "white";
 // }
+//

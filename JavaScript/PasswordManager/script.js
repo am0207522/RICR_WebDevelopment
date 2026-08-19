@@ -26,7 +26,7 @@ function saveToLocalStorage(packet) {
 
   oldData.push(packet);
   console.log(newData);
-
+//
   const packetInString = JSON.stringify(packet);
 
   localStorage.setItem("Passwords", packetInString);

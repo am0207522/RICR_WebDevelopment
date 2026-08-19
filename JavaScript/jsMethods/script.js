@@ -1,4 +1,4 @@
-// topic fuction
+// topic fuctions
 
 // let a = 20, b=30;
 // function sum (x,y){

@@ -32,7 +32,7 @@ document.getElementById('reset-btn').addEventListener('click', () => {
 
 
 
-
+//
 
 // function Bulb1On(){
 //     document.getElementById("bulb1").style.backgroundColor = "yellow";

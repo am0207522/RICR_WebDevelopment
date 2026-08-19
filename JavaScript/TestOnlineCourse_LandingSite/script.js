@@ -1,5 +1,5 @@
 // ============================================================
-//  COURSE DATA - Simple array of objects
+//  COURSE DATA - Simple array of objectss
 // ============================================================
 
 var courses = [
